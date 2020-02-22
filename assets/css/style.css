@@ -1,0 +1,175 @@
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh; 
+	/* 
+		Avoid the IE 10-11 `min-height` bug. 
+	*/
+}
+
+.flex-NavContainer {
+	padding: 0;
+	width: 960px;
+	height: 81px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+
+.flex-LeftBlock {
+	background: #4aaaa5;
+	padding: 0 20px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 2em;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	text-align: center;
+	align-items: center;
+}
+
+.flex-RightBlock {
+	background: #ffffff;
+	padding: 0px;
+	
+	color: #777777;
+	font-size: 1em;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.content {
+	/* 
+		Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. 
+	*/
+	flex: 1 0 auto;
+	padding: 20px;
+	background-image: url("./../images/dust_scratches.png");
+}
+
+.contentText {
+	width: 960px;
+	background: #ffffff;
+	padding: 30px;
+	margin: auto;
+}
+
+.AlvContent-FlexRow {
+	/*
+	display: flex;
+	flex-direction: row;
+	*/
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+
+.AlvContent-FlexCell {
+	/* flex: 1 0 auto; */
+	width: 300px;
+}
+
+.footer {
+	flex-shrink: 0; 
+	/* 
+		Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. 
+	*/
+	padding: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font: 16px Sans-Serif;
+}
+
+h1 {
+	margin: 0 0 20px 0;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+header {
+	border-bottom: 4px solid #cccccc;
+	background: #ffffff;
+	color: #777777;
+}
+
+footer {
+	border-top: 8px solid #4aaaa5;
+	background: #666666;
+	color: white;
+	text-align: center;
+}
+
+a.myNav:link {
+	color: #777777;
+}
+
+a.myNav:visited {
+	color: #333333;
+}
+
+a.myNav:hover {
+	background-color: #e0e0e0;
+	color: red;
+	transition: background-color 0.6s ease-in-out;
+}
+
+a.myNav:active {
+	color: orange;
+}
+
+/* Start of my custom card code */
+.AlvCard{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+.AlvCard .AlvTextOverlayOnCard{
+    position: absolute;
+    z-index: 9;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 60%; /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 64, 128, 0.4);
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 100%; /* Set the width of the positioned div */
+}
+
+/*
+// Usage of .AlvCard and .AlvCard .AlvTextOverlayOnCard:
+
+1.  create a div container of class="AlvCard"
+2.  inside newly created div container, place first an image that will fill the div container fully
+3.  right after placing that image, create a new div container of class="AlvTextOverlayOnCard"
+
+	3a.  this new div should be nested inside the "AlvCard" container, hopefully seen by proper code indenting
+	
+4.  inside this "AlvTextOverlayOnCard", a header tag can be used to give the picture its title or caption
+5.  CSS code for specifically in "AlvTextOverlayOnCard" has the options to alter the appearance of the text overlay
+	5a.  Options should be:  
+		- text-align: // should be standard options from CSS
+		- top: /* Adjust this value to move the positioned div up and down, larger percentages moves the text overlay down, and smaller percentages move it up
+		- background: // the first three values are whole numbers ranging from 0 to 255, and the last one is opacity or transparency going from 0 to 1, with 0 being invisible
+		- font-family: // as in standard CSS
+		- color: // as in standard CSS
+		- width: // this is the percent width relative to the image file used in the parent "AlvCard" container
+*/
+
+/* End of my custom card code */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>Professional Site of Alvin H. Revilas - Contact</title>
+	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="./assets/css/alvStyle.css">	
+	
+	</head>
+	
+	<body>
+<div class="container">
+	<div class="row"><!-- row # 1 -->
+	<!-- header row with name block of 3 width, and a 9 width navigation block -->
+	<!-- col-xs-12 col-sm-6 -->
+		<div class="col-xs-12 col-sm-3 AlvNameBlock">
+			Alvin Revilas
+		</div>
+		<div class="col-xs-12 col-sm-9 AlvNavBlock">
+			<a href="index.html" class="myNav">About Me</a> | <a href="portfolio.html" class="myNav">Projects</a> | <a href="contact.html" class="myNav">Contact</a>
+		</div>
+	</div>
+	<div class="row"><!-- row # 2 -->
+	<!-- main area:  one column 12 wide with an hr at the top -->
+		<div class="col-md-12 AlvContentArea">
+			<div class="AlvContentText">
+				<h1>Contact</h1>
+				<hr width = "90%">
+				<form method="post" action="./processForm.php">
+					<div>
+						<p>
+							<label for="name">Enter your name: </label><br>
+							<input type="text" name="name" id="name" size="40" required>
+						</p>
+						<p>
+							<label for="email">Enter your email: </label><br>
+							<input type="email" name="email" id="email" size="40" required>
+						</p>
+						<p>
+							<label for="message">Your message: </label><br>
+							<textarea name="message" id="message" cols="40" rows="6" wrap="virtual"></textarea>
+						</p>
+						<p>
+							<input type="submit" value="Send Message!">
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row"><!-- row # 3 -->
+	<!-- footer:  one columns of 12 width -->
+		<div class="col-md-12 AlvFooter">
+			<p>&copy; 2019 by Alvin H. Revilas</p>
+		</div>
+	</div>
+</div>
+	</body>
+</html>
